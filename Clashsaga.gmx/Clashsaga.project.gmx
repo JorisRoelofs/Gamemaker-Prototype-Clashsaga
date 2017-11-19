@@ -7,6 +7,7 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_Template</sprite>
+    <sprite>sprites\sprCursor</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -15,11 +16,15 @@
     <script>scripts\scrCreateGrid.gml</script>
     <script>scripts\scrCheckKeyTyped.gml</script>
     <script>scripts\scrCheckKeyTypedSpecial.gml</script>
+    <script>scripts\scrTextFormatting.gml</script>
   </scripts>
   <objects name="objects">
+    <object>objects\objTextFormatting</object>
     <object>objects\objTile</object>
     <object>objects\objGrid</object>
     <object>objects\objCheckKeyType</object>
+    <object>objects\objPopulationTotal</object>
+    <object>objects\objCursor</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

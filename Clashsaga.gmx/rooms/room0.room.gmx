@@ -53,6 +53,9 @@
   <instances>
     <instance objName="objGrid" x="0" y="0" name="inst_52B76BD3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCheckKeyType" x="128" y="64" name="inst_DB6490B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCursor" x="32" y="32" name="inst_D841D270" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPopulationTotal" x="64" y="0" name="inst_E67EA578" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objTextFormatting" x="96" y="0" name="inst_82C39702" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
