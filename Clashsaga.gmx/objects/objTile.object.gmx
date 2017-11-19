@@ -115,6 +115,10 @@ else if (tileType == "Lake")
 {
     foodIncomeBase = 1 + random(4);
 }
+else if (tileType == "Village")
+{
+    scrVillageCreation();
+}
 
 show_debug_message("Copper:" + string(copperYes));
 show_debug_message("Food:" + string(foodIncomeBase));
