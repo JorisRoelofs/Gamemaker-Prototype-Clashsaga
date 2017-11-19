@@ -19,6 +19,7 @@
     <script>scripts\scrCheckKeyTypedSpecial.gml</script>
     <script>scripts\scrTextFormatting.gml</script>
     <script>scripts\scrVillageCreation.gml</script>
+    <script>scripts\scrEndTurn.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\objGod</object>
