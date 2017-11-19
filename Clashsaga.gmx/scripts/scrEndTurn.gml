@@ -8,8 +8,8 @@ foodSupply = foodStock + foodIncome*Time_perTurn - villagePop*Time_perTurn;
 lifeStandard = 0; //deze moet stijgen met technologische vooruitgang
 lifeExpectation = 25 + lifeStandard; //levensverwachting in jaren
 deathCount_age = villagePop*(1/lifeExpectation)*Time_perTurn; //dood door veroudering.
-deathcount_food = 0;
-pop_groth = popInVillage * 1/3 * time_perTurn + VillagePop * 1/10 * Time_perTurn;
+deathCount_food = 0;
+pop_growth = popInVillage * 1/3 * time_perTurn + villagePop * 1/10 * Time_perTurn;
 
 if (foodSupply < 0)
 {
@@ -19,6 +19,6 @@ if (foodSupply < 0)
     foodSupply = 0;
     
 }
-
+villagePop += pop_growth - deathCount_age -deathCount_food;
 
 
