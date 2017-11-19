@@ -28,8 +28,24 @@
             <string>population = 0;
 
 pop_maxEff = 8 + random(4); // base + variance
-tileType = "Mountain"; //Field, Forrest, Mountain, Lake or Village
-
+tileTypeSelect = random(1);
+if (tileTypeSelect &lt;= 0.3) 
+{
+    tileType = "Field"; //Field, Forrest, Mountain, Lake or Village
+}
+else if (tileTypeSelect &lt;= 0.6)
+{
+    tileType = "Forrest";
+}
+else if (tileTypeSelect &lt;= 0.9)
+{
+    tileType = "Mountain";
+}
+else
+{
+    tileType = "Lake";
+}
+        
 ///incomebase = 0 tot anders gedefineerd:
 foodIncomeBase = 0;
 stoneIncomeBase = 0;
@@ -39,7 +55,7 @@ coalIncomeBase = 0;
 ironIncomeBase = 0;
 tinIncomeBase = 0;
 silverIncomeBase = 0;
-GoldIncomeBase = 0;
+goldIncomeBase = 0;
 horsesIncomeBase = 0;
 
 
@@ -120,8 +136,8 @@ else if (tileType == "Village")
     scrVillageCreation();
 }
 
-show_debug_message("Copper:" + string(copperYes));
-show_debug_message("Food:" + string(foodIncomeBase));
+show_debug_message("tileType:" + string(tileType));
+//show_debug_message("Food:" + string(foodIncomeBase));
 
 </string>
           </argument>
