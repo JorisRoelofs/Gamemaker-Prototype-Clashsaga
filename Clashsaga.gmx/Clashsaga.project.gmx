@@ -6,22 +6,15 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\sprTile</sprite>
+    <sprite>sprites\spr_Template</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
-  <scripts name="scripts">
-    <script>scripts\scrCreateGrid.gml</script>
-    <scripts name="Unused">
-      <script>scripts\scr_csv_to_ds_grid.gml</script>
-    </scripts>
-  </scripts>
   <objects name="objects">
-    <object>objects\objGrid</object>
-    <object>objects\objTile</object>
+    <object>objects\obj_Template</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
+    <room>rooms\rm_Test</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
