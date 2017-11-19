@@ -25,14 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>typeString = "";
-selectedTileID = false;
+            <string>///Variables
+turn = 0;
+populationTotal = 100;
 </string>
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -49,43 +48,11 @@ selectedTileID = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(objCursor.pressed)
-{
-    with(selectedTileID) image_index = 0;
-    selectedTileID = false;
-    with(objTile) if(place_meeting(x,y,objCursor)) other.selectedTileID = id;
-    with(selectedTileID) image_index = 1;
-}
-
-if(selectedTileID)
-{
-    key = scrCheckKeyTyped('0','1','2','3','4','5','6','7','8','9');
-    if(key != "")
-    {
-        typeString += key;
-        typeStringInt = real(typeString);
-        populationTotal = objGod.populationTotal + selectedTileID.population - typeStringInt;
-        if(populationTotal &lt; 0)
-        {
-            typeStringInt += populationTotal;
-        }
-        typeString = string(typeStringInt);
-    }
-    
-    if(scrCheckKeyTypedSpecial(vk_backspace) != "")
-    {
-        typeString = string_delete(typeString, string_length(typeString), 1);
-    }
-    
-    if(scrCheckKeyTypedSpecial(vk_enter) != "")
-    {
-        typeStringInt = real(typeString);
-        objGod.populationTotal += selectedTileID.population - typeStringInt;
-        selectedTileID.population = typeStringInt;
-        typeString = "";
-        with(selectedTileID) image_index = 0;
-    }
-}
+            <string>///Create Instances
+instance_create(0,0,objTextFormatting);
+instance_create(0,0,objCursor);
+instance_create(0,0,objGrid);
+instance_create(0,0,objCheckKeyType);
 </string>
           </argument>
         </arguments>

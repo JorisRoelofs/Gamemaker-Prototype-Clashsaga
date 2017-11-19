@@ -8,6 +8,7 @@
   <sprites name="sprites">
     <sprite>sprites\spr_Template</sprite>
     <sprite>sprites\sprCursor</sprite>
+    <sprite>sprites\sprButton</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -20,12 +21,14 @@
     <script>scripts\scrVillageCreation.gml</script>
   </scripts>
   <objects name="objects">
+    <object>objects\objGod</object>
     <object>objects\objTextFormatting</object>
     <object>objects\objTile</object>
     <object>objects\objGrid</object>
     <object>objects\objCheckKeyType</object>
-    <object>objects\objPopulationTotal</object>
     <object>objects\objCursor</object>
+    <object>objects\objButton</object>
+    <object>objects\objEndTurnButton</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
