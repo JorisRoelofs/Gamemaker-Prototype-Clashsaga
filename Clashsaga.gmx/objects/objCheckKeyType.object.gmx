@@ -51,10 +51,10 @@ selectedTileID = false;
             <kind>1</kind>
             <string>if(objCursor.pressed)
 {
-    with(selectedTileID) image_index = 0;
+//    with(selectedTileID) image_index = 0;
     selectedTileID = false;
     with(objTile) if(place_meeting(x,y,objCursor)) other.selectedTileID = id;
-    with(selectedTileID) image_index = 1;
+//    with(selectedTileID) image_index = 1;
 }
 
 if(selectedTileID)
@@ -83,7 +83,7 @@ if(selectedTileID)
         objGod.populationTotal += selectedTileID.population - typeStringInt;
         selectedTileID.population = typeStringInt;
         typeString = "";
-        with(selectedTileID) image_index = 0;
+//        with(selectedTileID) image_index = 0;
     }
 }
 </string>
