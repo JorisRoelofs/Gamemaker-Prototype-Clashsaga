@@ -16,7 +16,6 @@
   </scripts>
   <objects name="objects">
     <object>objects\objTile</object>
-    <object>objects\object0</object>
     <object>objects\objGrid</object>
   </objects>
   <rooms name="rooms">

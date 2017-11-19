@@ -27,11 +27,12 @@
             <kind>1</kind>
             <string>
 pop_maxEff = 8 + random(4); // base + variance
-tileType = "Field"; //Field, Forrest, Mountain or Village
+tileType = "Mountain"; //Field, Forrest, Mountain or Village
 
 if (tileType == "Field")
 {
     foodIncomeBase = 2 + random(2);
+    show_debug_message("Food:" + string(foodIncomeBase));
 }
 else if (tileType == "Forrest")
 {
@@ -41,8 +42,8 @@ else if (tileType == "Mountain")
 {
     stoneIncomeBase = 1 + random(2);
     copperChance = 0.20;
-    copperYes = random(100)
-    if (copperChange*copperYes &gt;= 1)
+    copperYes = random(1)
+    if (copperYes &lt;= copperChance)
     {
         copperIncomeBase = 0.5 + random(1);
     }
@@ -50,10 +51,9 @@ else if (tileType == "Mountain")
     {
         copperIncomeBase = 0;
     }
+    
+show_debug_message("Copper:" + string(copperYes));
 }
-
-show_debug_message("Food:" + string(foodIncomeBase));
-show_debug_message("Pop:" + string(pop_maxEff));
 </string>
           </argument>
         </arguments>
