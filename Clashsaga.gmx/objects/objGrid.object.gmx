@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>tileIDArray = scrCreateGrid(24, 92, 3, 7, objTile);
+            <string>tileIDArray = scrCreateGrid(100, 100, 8, 8, objTile);
 </string>
           </argument>
         </arguments>
