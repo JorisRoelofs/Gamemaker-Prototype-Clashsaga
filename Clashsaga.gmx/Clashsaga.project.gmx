@@ -23,13 +23,13 @@
   </scripts>
   <objects name="objects">
     <object>objects\objGod</object>
-    <object>objects\objTextFormatting</object>
-    <object>objects\objTile</object>
-    <object>objects\objGrid</object>
+    <object>objects\objButtonParent</object>
     <object>objects\objCheckKeyType</object>
     <object>objects\objCursor</object>
-    <object>objects\objButton</object>
     <object>objects\objEndTurnButton</object>
+    <object>objects\objGrid</object>
+    <object>objects\objTextFormatting</object>
+    <object>objects\objTile</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
