@@ -13,10 +13,13 @@
   <scripts name="scripts">
     <script>scripts\scr_csv_to_ds_grid.gml</script>
     <script>scripts\scrCreateGrid.gml</script>
+    <script>scripts\scrCheckKeyTyped.gml</script>
+    <script>scripts\scrCheckKeyTypedSpecial.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\objTile</object>
     <object>objects\objGrid</object>
+    <object>objects\objCheckKeyType</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
