@@ -14,7 +14,7 @@ pop_growth = popInVillage * 1/3 * time_perTurn + villagePop * 1/10 * Time_perTur
 if (foodSupply < 0)
 {
     deathCount_food = villagePop / 2;
-    deathCount_Age = 0;
+    deathCount_age = 0;
     pop_groth = 0;
     foodSupply = 0;
     
