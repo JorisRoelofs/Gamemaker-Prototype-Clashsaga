@@ -16,13 +16,13 @@ deathCount_age = villagePop*(1/lifeExpectation)*Time_perTurn; //dood door veroud
 deathCount_food = 0;
 pop_growth = round(popInVillage * 1/6 * Time_perTurn + (villagePop - popInVillage) * 1/20 * Time_perTurn);
 
+
 if (foodSupply < 0)
 {
     deathCount_food = villagePop / 2;
     deathCount_age = 0;
     pop_groth = 0;
     foodSupply = 0;
-    
 }
 villagePop += pop_growth - deathCount_age - deathCount_food;
 objGod.populationTotal = villagePop;

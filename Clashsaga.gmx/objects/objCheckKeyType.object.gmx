@@ -54,6 +54,7 @@ selectedTileID = false;
 //    with(selectedTileID) image_index = 0;
     selectedTileID = false;
     with(objTile) if(place_meeting(x,y,objCursor)) other.selectedTileID = id;
+    typeString = "";
 //    with(selectedTileID) image_index = 1;
 }
 
