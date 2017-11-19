@@ -7,6 +7,22 @@ foodStock = 0;
 
 popInVillage = objGrid.tileIDArray[objGrid.villageX,objGrid.villageY].population;
 villagePop = objGod.populationTotal;
+range = 1;
+
+income = array_create(10);
+incomeTotal = array_create(10);
+for (i = -range; i < range; i++)
+{   
+    for (j = -range; j < range; j++)
+    {  
+        income = objGrid.tileIDArray[objGrid.villageX+i,objGrid.villageY+j].income;
+        for (k = 0 k < 10 ; k++)
+        {
+            incomeTotal[k] += income[k] * objGrid.tileIDArray[objGrid.villageX+i,objGrid.villageY+j].population;
+        }
+    }
+}
+show_debug_message(string (incomeTotal));
 
 foodSupply = foodStock + foodIncome*Time_perTurn - villagePop*Time_perTurn;
 

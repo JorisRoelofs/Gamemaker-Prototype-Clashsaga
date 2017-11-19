@@ -84,4 +84,11 @@ else if (tileType == "Village")
 {
     scrVillageCreation();
 }
+
+income = array_create(10)
+income[0] = foodIncomeBase; income[1] = stoneIncomeBase; income[2] = leatherIncomeBase;income[3] = copperIncomeBase; income[4] = 
+coalIncomeBase; income[5] = ironIncomeBase; income[6] = tinIncomeBase; income[7] = silverIncomeBase; income[8] = 
+goldIncomeBase; income[9] = horsesIncomeBase;
+//show_debug_message(string (income));
+
 //show_debug_message("Food:" + string(foodIncomeBase));
