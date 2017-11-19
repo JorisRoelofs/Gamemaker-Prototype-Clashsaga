@@ -29,7 +29,7 @@
     <object>objects\objEndTurnButton</object>
     <object>objects\objGrid</object>
     <object>objects\objTextFormatting</object>
-    <object>objects\objTile_new</object>
+    <object>objects\objTile</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
