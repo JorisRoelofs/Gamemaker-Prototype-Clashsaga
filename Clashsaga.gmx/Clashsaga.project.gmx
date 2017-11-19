@@ -10,11 +10,17 @@
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scr_csv_to_ds_grid.gml</script>
+    <script>scripts\scrCreateGrid.gml</script>
+  </scripts>
   <objects name="objects">
-    <object>objects\obj_Template</object>
+    <object>objects\objTile</object>
+    <object>objects\object0</object>
+    <object>objects\objGrid</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_Test</room>
+    <room>rooms\room0</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
