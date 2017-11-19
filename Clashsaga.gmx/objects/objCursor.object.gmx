@@ -76,7 +76,7 @@ else pressed = false;
           <argument>
             <kind>1</kind>
             <string>draw_self();
-draw_text(x,y,objCheckKeyType.typeString);
+draw_text(x,y-16,objCheckKeyType.typeString);
 </string>
           </argument>
         </arguments>

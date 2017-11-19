@@ -51,9 +51,10 @@ selectedTileID = false;
             <kind>1</kind>
             <string>if(objCursor.pressed)
 {
+    with(selectedTileID) image_index = 0;
     selectedTileID = false;
     with(objTile) if(place_meeting(x,y,objCursor)) other.selectedTileID = id;
-    show_debug_message(string(selectedTileID));
+    with(selectedTileID) image_index = 1;
 }
 
 if(selectedTileID)
@@ -62,25 +63,27 @@ if(selectedTileID)
     if(key != "")
     {
         typeString += key;
+        typeStringInt = real(typeString);
+        populationTotal = objPopulationTotal.populationTotal + selectedTileID.population - typeStringInt;
+        if(populationTotal &lt; 0)
+        {
+            typeStringInt += populationTotal;
+        }
+        typeString = string(typeStringInt);
     }
     
-    /*if(scrCheckKeyTypedSpecial(vk_backspace) != "")
+    if(scrCheckKeyTypedSpecial(vk_backspace) != "")
     {
-        typeString ;
+        typeString = string_delete(typeString, string_length(typeString), 1);
     }
-    */
+    
     if(scrCheckKeyTypedSpecial(vk_enter) != "")
     {
         typeStringInt = real(typeString);
         objPopulationTotal.populationTotal += selectedTileID.population - typeStringInt;
-        if(objPopulationTotal.populationTotal &lt; 0)
-        {
-            typeStringInt += objPopulationTotal.populationTotal;
-            objPopulationTotal.populationTotal = 0;
-        }
         selectedTileID.population = typeStringInt;
         typeString = "";
-        show_debug_message(string(selectedTileID.population));
+        with(selectedTileID) image_index = 0;
     }
 }
 </string>
