@@ -4,15 +4,28 @@ gridWidth= argument[2];
 gridHeight = argument[3];
 tile = argument[4];
 
+villageX = irandom_range(1,gridWidth-2);
+villageY = irandom_range(1,gridHeight-2);
+
 var tileWidth = 0; //Is changed later in the code, as you can only check the sprite width once an instance of an object exists in the game world
 var tileHeight = 0;
 
 for(var i = 0; i < gridHeight; i++)
 {
     for(var j = 0; j < gridWidth; j++)
-    {
-        tileIDArray[i,j] = instance_create(gridOffsetX + (j * tileWidth), gridOffsetY + (i * tileHeight), tile)
+    {    
+        tileIDArray[i,j] = instance_create(gridOffsetX + (j * tileWidth), gridOffsetY + (i * tileHeight), tile);
         
+        if(i == villageX && j == villageY)
+        {
+            with(tileIDArray[i,j])
+            {
+                tileType = "Village";
+                scrTileIncomeBase();
+                scrTileTypeImage();
+            }
+        }
+
         if(i == 0 && j == 0)
         {
             var tileSprite = tile.sprite_index;

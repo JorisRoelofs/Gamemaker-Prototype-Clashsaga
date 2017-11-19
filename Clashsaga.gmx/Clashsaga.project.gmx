@@ -20,6 +20,9 @@
     <script>scripts\scrTextFormatting.gml</script>
     <script>scripts\scrVillageCreation.gml</script>
     <script>scripts\scrEndTurn.gml</script>
+    <script>scripts\scrDetermineTileType.gml</script>
+    <script>scripts\scrTileIncomeBase.gml</script>
+    <script>scripts\scrTileTypeImage.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\objGod</object>
