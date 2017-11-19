@@ -160,6 +160,18 @@ show_debug_message("tileType:" + string(tileType));
           <argument>
             <kind>1</kind>
             <string>///Image
+if (tileType = "Field") {
+    image_index = 0;
+}
+if (tileType = "Forrest") {
+    image_index = 1;
+}
+if (tileType = "Mountain") {
+    image_index = 2;
+}
+if (tileType = "Lake") {
+    image_index = 3;
+}
 image_speed = 0;
 </string>
           </argument>
